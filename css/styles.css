@@ -45,6 +45,17 @@ img {
   list-style-type: none;
 }
 
+.current::after {
+  content: '';
+  width: 100%;
+  background-color: var(--accent-color);
+  height: 4px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-radius: 2px;
+}
+
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -211,6 +222,7 @@ body {
 
 .site-nav .link.current {
   color: var(--accent-color);
+  position: relative;
 }
 
 /* Оформление контактов в хєдєре */
