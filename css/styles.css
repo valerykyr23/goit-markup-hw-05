@@ -198,6 +198,10 @@ body {
   letter-spacing: 0.02em;
   text-decoration: none;
   display: flex;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .navigation {
@@ -266,6 +270,10 @@ body {
   padding-top: 32px;
   padding-bottom: 32px;
   display: inline-block;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Оформление фильтра на странице портфолио */
@@ -292,6 +300,10 @@ body {
   height: 38px;
   background-color: var(--tertiary-white-background);
   border-color: transparent;
+
+  transition-property: background-color, color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filter-button:hover,
@@ -391,6 +403,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .teamplayers-socials-list {
   display: flex;
@@ -402,6 +418,10 @@ body {
 
 .teamplayers-socials-icon {
   fill: #afb1b8;
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .teamplayers-socials-link:hover,
@@ -468,6 +488,10 @@ body {
 .project-link {
   display: block;
   cursor: pointer;
+
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .project-item {
@@ -511,6 +535,10 @@ body {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-list {
@@ -524,6 +552,10 @@ body {
 
 .clients-logo-icon {
   fill: #afb1b8;
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-website-link:hover .clients-logo-icon,
@@ -555,6 +587,10 @@ body {
 
 .address-first-item {
   color: var(--main-background-color);
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .address-first-item:hover,
 .address-first-item:focus {
@@ -563,6 +599,10 @@ body {
 
 .address-item {
   color: var(--secondary-text-color);
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-address .footer-item + .footer-item {
@@ -594,6 +634,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-socials-list {
