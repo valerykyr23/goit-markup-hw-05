@@ -366,6 +366,10 @@ body {
   margin-right: 30px;
 }
 
+.work-photo-item {
+  position: relative;
+}
+
 .img-work,
 .img-team,
 .img-project {
@@ -375,6 +379,22 @@ body {
 
 .work-photo-item:nth-child(3n) {
   margin-right: 0;
+}
+
+.work-toptext {
+  width: 100%;
+  height: 70px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 0;
+  color: var(--main-background-color);
+  background-color: rgba(47, 48, 58, 0.8);
+  padding-top: 27px;
+  padding-bottom: 27px;
 }
 
 /* Секция Наша команда на странице студии */
