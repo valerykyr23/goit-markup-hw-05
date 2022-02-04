@@ -555,7 +555,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: var(--accent-color);
+  background-color: rgba(33, 150, 243, 0.9);
   color: var(--main-background-color);
   font-weight: 400;
   font-size: 18px;
