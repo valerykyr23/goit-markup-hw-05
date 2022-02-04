@@ -543,6 +543,30 @@ body {
   letter-spacing: 0.03em;
 }
 
+.project-wrap {
+  position: relative;
+  overflow: hidden;
+}
+.project-item:hover .project-toptext {
+  transform: translateY(0);
+}
+
+.project-toptext {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--accent-color);
+  color: var(--main-background-color);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.55;
+  letter-spacing: 0.03em;
+  padding: 63px 24px;
+  height: 100%;
+  transform: translateY(100%);
+  transition: transform 250ms linear;
+}
+
 /* Секция Наши клиенты на странице студии */
 
 .clients-website-link {
