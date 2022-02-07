@@ -89,11 +89,25 @@ img {
   position: absolute;
 }
 
-.close-icon {
+.modal-close-button {
   width: 30px;
   height: 30px;
   border-radius: 50%;
+  background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.close-icon {
+  width: 18px;
+  height: 18px;
+  fill: #000000;
 }
 
 /* Скрытый заголовок */
