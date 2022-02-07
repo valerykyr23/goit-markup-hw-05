@@ -76,8 +76,12 @@ img {
   background-color: rgba(0, 0, 0, 0.2);
   position: fixed;
   top: 0;
+  transition: opacity 500ms, visibility 500ms;
 }
 
+.backdrop.is-hidden .modal {
+  transform: scale(0.7);
+}
 .modal {
   min-height: 500px;
   width: 500px;
@@ -87,7 +91,8 @@ img {
   border-radius: 4px;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(1.25);
+  transition: transform 500ms;
   position: absolute;
 }
 
