@@ -66,7 +66,7 @@
             <div class="container">
 
             <h1  class="hero-title">Эффективные решения <br> для вашего бизнеса</h1>
-            <button type="button" class="hero-button">Заказать услугу</button>
+            <button type="button" class="hero-button" data-modal-open>Заказать услугу</button>
 
             </div>
 
@@ -345,11 +345,33 @@
 
 </footer>
 
-<div class="backdrop">
+<!--Оформление модального окна и бєкдропа-->
+
+<div class="backdrop is-hidden" data-modal>
     <div class="modal">
-        <button class="modal-close-button"><svg class="close-icon"><use href="./images/icon.svg.svg#icon-close"></use></svg></button>
+        <button class="modal-close-button" data-modal-close><svg class="close-icon"><use href="./images/icon.svg.svg#icon-close"></use></svg></button>
     </div>
 </div>
+
+<!--Скрипт модального окна-->
+ <script>
+
+ (() => {
+        const refs = {
+            openModalBtn: document.querySelector("[data-modal-open]"),
+            closeModalBtn: document.querySelector("[data-modal-close]"),
+            modal: document.querySelector("[data-modal]"),
+        };
+
+        refs.openModalBtn.addEventListener("click", toggleModal);
+        refs.closeModalBtn.addEventListener("click", toggleModal);
+
+        function toggleModal() {
+            refs.modal.classList.toggle("is-hidden");
+        }
+    })();
+    
+    </script>
    
 </body>
 </html>
