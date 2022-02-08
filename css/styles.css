@@ -409,8 +409,8 @@ body {
 
 .section-work {
   background-color: var(--main-background-color);
-  text-align: center;
   padding-top: 0;
+  text-align: center;
 }
 
 .work-photo-list {
@@ -420,9 +420,6 @@ body {
 .work-photo-item {
   margin-right: 30px;
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .img-work,
@@ -448,6 +445,9 @@ body {
   bottom: 0;
   color: var(--main-background-color);
   background-color: rgba(47, 48, 58, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Секция Наша команда на странице студии */
