@@ -327,7 +327,7 @@ body {
   padding-bottom: 32px;
   display: inline-block;
 
-  transition-property: color;
+  transition-property: color, fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -353,9 +353,9 @@ body {
   letter-spacing: 0.03em;
   border-radius: 4px;
   padding: 6px 22px;
-  height: 38px;
   background-color: var(--tertiary-white-background);
   border-color: transparent;
+  cursor: pointer;
 
   transition-property: background-color, color, box-shadow;
   transition-duration: 250ms;
@@ -366,7 +366,6 @@ body {
 .filter-button:focus {
   color: var(--main-background-color);
   background-color: var(--accent-color);
-  cursor: pointer;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
@@ -420,10 +419,10 @@ body {
 
 .work-photo-item {
   margin-right: 30px;
-}
-
-.work-photo-item {
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .img-work,
@@ -449,8 +448,6 @@ body {
   bottom: 0;
   color: var(--main-background-color);
   background-color: rgba(47, 48, 58, 0.8);
-  padding-top: 27px;
-  padding-bottom: 27px;
 }
 
 /* Секция Наша команда на странице студии */
@@ -603,7 +600,7 @@ body {
   position: relative;
   overflow: hidden;
 }
-.project-item:hover .project-toptext {
+.project-link:hover .project-toptext {
   transform: translateY(0);
 }
 
@@ -619,7 +616,7 @@ body {
   letter-spacing: 0.03em;
   padding: 63px 24px;
   height: 100%;
-  transform: translateY(100%);
+  transform: translateY(101%);
   transition: transform 250ms linear;
 }
 
@@ -734,6 +731,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 
   transition-property: background-color;
   transition-duration: 250ms;
